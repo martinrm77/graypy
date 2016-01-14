@@ -94,7 +94,7 @@ def make_message_dict(record, debugging_fields, extra_fields, fqdn, localname, f
         host = localname
     else:
         host = socket.gethostname()
-    fields = {'version': "1.0",
+    fields = {'version': "1.1",
         'host': host,
         'short_message': record.getMessage(),
         'full_message': get_full_message(record.exc_info, record.getMessage()),
